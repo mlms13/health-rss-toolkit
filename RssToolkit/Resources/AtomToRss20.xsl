@@ -52,7 +52,7 @@
           <xsl:value-of select="child::*[name()='content']"/>
         </xsl:element>
         <xsl:element name="pubDate">
-          <xsl:value-of select="child::*[name()='modified']"/>
+          <xsl:value-of select="child::*[name()='updated']"/>
         </xsl:element>
       </xsl:element>
     </xsl:for-each>
