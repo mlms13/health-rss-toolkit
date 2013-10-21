@@ -30,6 +30,7 @@ namespace RssToolkit.Rss
         private string _pubDate;
         private string _title;
         private RssSource _source;
+        private string _encoded;
 
         /// <summary>
         /// Gets or sets the author.
@@ -226,6 +227,23 @@ namespace RssToolkit.Rss
             set
             {
                 _source = value;
+            }
+        }
+        /// <summary>
+        /// Gets or sets the full encoded content.
+        /// </summary>
+        /// <value>The encoded content.</value>
+        [XmlElement("encoded", Namespace = "http://purl.org/rss/1.0/modules/content/")]
+        public string Encoded
+        {
+            get
+            {
+                return _encoded;
+            }
+
+            set
+            {
+                _encoded = value;
             }
         }
     }
